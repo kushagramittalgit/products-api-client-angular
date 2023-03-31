@@ -1,0 +1,22 @@
+<div class="menu">
+    <button class="btn btn-products" (click)="onClickBack()">Go Back</button>
+
+</div>
+
+<div class="box" *ngIf="data">
+    <div>
+        <p class="content">
+            Product ID : {{data._id}} <br>
+            Product Name : {{data.name}} <br>
+            Price:{{data.price}} <br>
+            Stock: {{data.stock}}
+        </p>
+    </div>
+</div>
+
+
+<div class="menu">
+    <button class="btn btn-products" (click)="onClickPrice()"> Update Price</button>
+    <button class="btn btn-products" (click)="onClickStock()"> Update Stock </button>
+    <button class="btn btn-products" (click)="onClickDelete()">Delete Product</button>
+</div>

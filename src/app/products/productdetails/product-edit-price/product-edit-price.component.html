@@ -1,0 +1,14 @@
+<div class="menu">
+    <button class="btn btn-products" (click)="onClickBack()">Go Back</button>
+</div>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-content">
+        <label for="price"> Enter New Price:
+            <input type="number" id="price" formControlName="price"></label>
+    </div>
+    <div class="form-action menu">
+        <button class="btn btn-products" type="submit"> Submit</button>
+    </div>
+</form>

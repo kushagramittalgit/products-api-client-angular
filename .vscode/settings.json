@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.root": "/dist/products_api_web",
+    "liveServer.settings.file": "index.html",
+    "css.styleSheets": [
+        "/dist/products_api_web"
+    ]
+}

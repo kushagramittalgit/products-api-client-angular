@@ -1,0 +1,20 @@
+<div class="menu">
+    <button class="btn btn-products" (click)="onClickBack()">Go Back</button>
+    <button class="btn btn-products" (click)="onSubmitCreate()"> Create Product</button>
+
+</div>
+<div class="box">
+    <div
+        *ngFor="let product of listProduct | paginate : { itemsPerPage: 3, currentPage:pagination,totalItems:totalProduct}">
+        <div class="content-box">
+            <p class="content">Product Name : {{product.name}} <br> Price:{{product.price}} &nbsp; Stock:
+                {{product.stock}}
+                <button class="btn btn-products" (click)="onClickDetails(product)"> View Details</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="menu-bottom">
+    <pagination-controls (pageChange)="renderPage($event)"></pagination-controls>
+</div>
